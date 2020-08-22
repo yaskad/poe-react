@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/poe/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/poe/static/js/main.31bbc679.chunk.js",
+    "main.js.map": "/poe/static/js/main.31bbc679.chunk.js.map",
+    "runtime-main.js": "/poe/static/js/runtime-main.ac0946b3.js",
+    "runtime-main.js.map": "/poe/static/js/runtime-main.ac0946b3.js.map",
+    "static/js/2.3cda2538.chunk.js": "/poe/static/js/2.3cda2538.chunk.js",
+    "static/js/2.3cda2538.chunk.js.map": "/poe/static/js/2.3cda2538.chunk.js.map",
+    "index.html": "/poe/index.html",
+    "precache-manifest.8bd590b1789153cd6b1989543033aa17.js": "/poe/precache-manifest.8bd590b1789153cd6b1989543033aa17.js",
+    "service-worker.js": "/poe/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/poe/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.3cda2538.chunk.js.LICENSE.txt": "/poe/static/js/2.3cda2538.chunk.js.LICENSE.txt",
+    "static/media/ElShaper.jpg": "/poe/static/media/ElShaper.e03b78b8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac0946b3.js",
+    "static/js/2.3cda2538.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.31bbc679.chunk.js"
+  ]
+}
