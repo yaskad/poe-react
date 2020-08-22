@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/poe-react/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/poe-react/static/js/main.9dbe8328.chunk.js",
-    "main.js.map": "/poe-react/static/js/main.9dbe8328.chunk.js.map",
+    "main.js": "/poe-react/static/js/main.272a0880.chunk.js",
+    "main.js.map": "/poe-react/static/js/main.272a0880.chunk.js.map",
     "runtime-main.js": "/poe-react/static/js/runtime-main.b274e516.js",
     "runtime-main.js.map": "/poe-react/static/js/runtime-main.b274e516.js.map",
     "static/js/2.14e8c6a1.chunk.js": "/poe-react/static/js/2.14e8c6a1.chunk.js",
     "static/js/2.14e8c6a1.chunk.js.map": "/poe-react/static/js/2.14e8c6a1.chunk.js.map",
     "index.html": "/poe-react/index.html",
-    "precache-manifest.ca9866c518079c6fd4d8a9aa243889cd.js": "/poe-react/precache-manifest.ca9866c518079c6fd4d8a9aa243889cd.js",
+    "precache-manifest.75b68906a9bdee0de43edb66ecbb6b0e.js": "/poe-react/precache-manifest.75b68906a9bdee0de43edb66ecbb6b0e.js",
     "service-worker.js": "/poe-react/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/poe-react/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.14e8c6a1.chunk.js.LICENSE.txt": "/poe-react/static/js/2.14e8c6a1.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.b274e516.js",
     "static/js/2.14e8c6a1.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.9dbe8328.chunk.js"
+    "static/js/main.272a0880.chunk.js"
   ]
 }
