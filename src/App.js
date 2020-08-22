@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
@@ -11,11 +11,11 @@ function App() {
       <NavigationBar />
       <Jumbotron/>
       <Layout>
-        <Router path={process.env.PUBLIC_URL + '/'}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>
-        </Router>
+        </BrowserRouter>
       </Layout>
     </React.Fragment>
   );
