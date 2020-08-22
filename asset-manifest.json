@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/poe/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/poe/static/js/main.31bbc679.chunk.js",
-    "main.js.map": "/poe/static/js/main.31bbc679.chunk.js.map",
-    "runtime-main.js": "/poe/static/js/runtime-main.ac0946b3.js",
-    "runtime-main.js.map": "/poe/static/js/runtime-main.ac0946b3.js.map",
-    "static/js/2.3cda2538.chunk.js": "/poe/static/js/2.3cda2538.chunk.js",
-    "static/js/2.3cda2538.chunk.js.map": "/poe/static/js/2.3cda2538.chunk.js.map",
-    "index.html": "/poe/index.html",
-    "precache-manifest.8bd590b1789153cd6b1989543033aa17.js": "/poe/precache-manifest.8bd590b1789153cd6b1989543033aa17.js",
-    "service-worker.js": "/poe/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/poe/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.3cda2538.chunk.js.LICENSE.txt": "/poe/static/js/2.3cda2538.chunk.js.LICENSE.txt",
-    "static/media/ElShaper.jpg": "/poe/static/media/ElShaper.e03b78b8.jpg"
+    "main.css": "/poe-react/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/poe-react/static/js/main.4dafee70.chunk.js",
+    "main.js.map": "/poe-react/static/js/main.4dafee70.chunk.js.map",
+    "runtime-main.js": "/poe-react/static/js/runtime-main.b274e516.js",
+    "runtime-main.js.map": "/poe-react/static/js/runtime-main.b274e516.js.map",
+    "static/js/2.14e8c6a1.chunk.js": "/poe-react/static/js/2.14e8c6a1.chunk.js",
+    "static/js/2.14e8c6a1.chunk.js.map": "/poe-react/static/js/2.14e8c6a1.chunk.js.map",
+    "index.html": "/poe-react/index.html",
+    "precache-manifest.df7003c9c9571505d675e1df816caf3f.js": "/poe-react/precache-manifest.df7003c9c9571505d675e1df816caf3f.js",
+    "service-worker.js": "/poe-react/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/poe-react/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.14e8c6a1.chunk.js.LICENSE.txt": "/poe-react/static/js/2.14e8c6a1.chunk.js.LICENSE.txt",
+    "static/media/ElShaper.jpg": "/poe-react/static/media/ElShaper.e03b78b8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac0946b3.js",
-    "static/js/2.3cda2538.chunk.js",
+    "static/js/runtime-main.b274e516.js",
+    "static/js/2.14e8c6a1.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.31bbc679.chunk.js"
+    "static/js/main.4dafee70.chunk.js"
   ]
 }
