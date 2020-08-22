@@ -11,7 +11,7 @@ function App() {
       <NavigationBar />
       <Jumbotron/>
       <Layout>
-        <Router>
+        <Router path={process.env.PUBLIC_URL + '/'}>
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>
