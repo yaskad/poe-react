@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/poe-react/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/poe-react/static/js/main.ce36dbc5.chunk.js",
-    "main.js.map": "/poe-react/static/js/main.ce36dbc5.chunk.js.map",
+    "main.js": "/poe-react/static/js/main.fd0bfe84.chunk.js",
+    "main.js.map": "/poe-react/static/js/main.fd0bfe84.chunk.js.map",
     "runtime-main.js": "/poe-react/static/js/runtime-main.b274e516.js",
     "runtime-main.js.map": "/poe-react/static/js/runtime-main.b274e516.js.map",
-    "static/js/2.9c0ae48b.chunk.js": "/poe-react/static/js/2.9c0ae48b.chunk.js",
-    "static/js/2.9c0ae48b.chunk.js.map": "/poe-react/static/js/2.9c0ae48b.chunk.js.map",
+    "static/js/2.8494d082.chunk.js": "/poe-react/static/js/2.8494d082.chunk.js",
+    "static/js/2.8494d082.chunk.js.map": "/poe-react/static/js/2.8494d082.chunk.js.map",
     "index.html": "/poe-react/index.html",
-    "precache-manifest.17905c6478fd03d3708eb602bd8d5402.js": "/poe-react/precache-manifest.17905c6478fd03d3708eb602bd8d5402.js",
+    "precache-manifest.8123bbfe575a7606c105528e2cbb7d4c.js": "/poe-react/precache-manifest.8123bbfe575a7606c105528e2cbb7d4c.js",
     "service-worker.js": "/poe-react/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/poe-react/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.9c0ae48b.chunk.js.LICENSE.txt": "/poe-react/static/js/2.9c0ae48b.chunk.js.LICENSE.txt",
+    "static/js/2.8494d082.chunk.js.LICENSE.txt": "/poe-react/static/js/2.8494d082.chunk.js.LICENSE.txt",
     "static/media/ElShaper.jpg": "/poe-react/static/media/ElShaper.e03b78b8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b274e516.js",
-    "static/js/2.9c0ae48b.chunk.js",
+    "static/js/2.8494d082.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.ce36dbc5.chunk.js"
+    "static/js/main.fd0bfe84.chunk.js"
   ]
 }

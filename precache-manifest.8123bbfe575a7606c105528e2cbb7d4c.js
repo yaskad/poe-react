@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5390bb30592c74426b50612e1e7c4c49",
+    "revision": "222df5c5bd5b468ff35938dda6eab10f",
     "url": "/poe-react/index.html"
   },
   {
-    "revision": "867392cd66639f84725f",
+    "revision": "70aafe83e7d11aece7fa",
     "url": "/poe-react/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "76edab1f354850ad9cd8",
-    "url": "/poe-react/static/js/2.9c0ae48b.chunk.js"
+    "revision": "2197cd386e20cbb8e895",
+    "url": "/poe-react/static/js/2.8494d082.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/poe-react/static/js/2.9c0ae48b.chunk.js.LICENSE.txt"
+    "url": "/poe-react/static/js/2.8494d082.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "867392cd66639f84725f",
-    "url": "/poe-react/static/js/main.ce36dbc5.chunk.js"
+    "revision": "70aafe83e7d11aece7fa",
+    "url": "/poe-react/static/js/main.fd0bfe84.chunk.js"
   },
   {
     "revision": "95c3ec067889672d00ce",
