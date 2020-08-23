@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -6,7 +6,30 @@ import Button from "react-bootstrap/Button";
 
 function UserInput() {
   const [validated, setValidated] = useState(false);
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
 
+  useEffect(() => {
+    fetch("http://api.pathofexile.com/leagues?")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setItems(result);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, []);
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  } else if (!isLoaded) {
+    return <div>Loading...</div>;
+  }
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -22,12 +45,11 @@ function UserInput() {
       <Form.Row>
         <Form.Group as={Col} md="4" controlId="validationCustomLeagueName">
           <Form.Label>League Name</Form.Label>
-          <Form.Control
-            required
-            type="text"
-            placeholder="Please enter league name"
-            defaultValue="Hardcore Harvest"
-          />
+          <select className="form-control">
+            {items.map((id) => (
+              <option key={id.id}>{id.id}</option>
+            ))}
+          </select>
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="4" controlId="validationCutomAccountName">
