@@ -16,8 +16,8 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
 
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -31,21 +31,13 @@ jobs:
           **/node_modules
         key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
         
-    - name: Install dependencies
-      run: npm install
-
-
-    - name: Build
-      run: CI='' npm run build
-
-    - name: Deploy
+    - name: Install and Build 🔧 
       run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin https://${github_token}@github.com/${repository}
-        CI='' npm run deploy
-      env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-        repository: ${{ github.repository }}
+        npm ci
+        npm run build
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+        branch: gh-pages 
+        folder: build 
