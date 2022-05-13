@@ -13,36 +13,34 @@ function HomePage() {
               level, given an XPH value.
             </p>
             <Link to="./GrindingTime" className="btn btn-secondary">
-              View details
+              Click here to get started
             </Link>
           </div>
           <div className="col-md-4">
             <h2>XP Penalty</h2>
             <p>
-              A tool for calculating the XP penalty given charchter level and
-              Map Tier orarea level.
+              A tool for calculating the XP penalty given character level and
+              Map Tier or area level.
             </p>
-            <Link to="./" className="btn btn-secondary">
-              View details
+            <Link to="./" className="btn btn-secondary" disabled>
+              WIP
             </Link>
           </div>
           <div className="col-md-4">
             <h2>Aura Bot</h2>
             <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
+              THIS IS WIP!
             </p>
-            <Link to="./" className="btn btn-secondary">
-              View details
+            <Link to="./" className="btn btn-secondary" disabled>
+              WIP
             </Link>
           </div>
         </div>
         <hr />
       </div>
       <footer className="container">
-        <p>&copy; Yasser Kadhim 2020</p>
+        <p>&copy; Yasser Kadhim 2022</p>
+        <p>This product isn't affiliated with or endorsed by Grinding Gear Games in any way.</p>
       </footer>
     </main>
   );

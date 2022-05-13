@@ -13,32 +13,32 @@ function UserInput() {
   const [league, setSelectedLeague] = useState();
 
   //For acc name
-  const [query, setQuery] = useState("");
-  const url =
-    query &&
-    `https://www.pathofexile.com/character-window/get-characters?accountName=${query}`;
-  const { status, data } = useFetch(url);
+  // const [query, setQuery] = useState("");
+  // const url =
+  //   query &&
+  //   `https://www.pathofexile.com/character-window/get-characters?accountName=${query}`;
+  // const { status, data } = useFetch(url);
 
-  useEffect(() => {
-    fetch("https://api.pathofexile.com/leagues?")
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          setIsLoaded(true);
-          setItems(result);
-        },
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      );
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://api.pathofexile.com/leagues?")
+  //     .then((res) => res.json())
+  //     .then(
+  //       (result) => {
+  //         setIsLoaded(true);
+  //         setItems(result);
+  //       },
+  //       (error) => {
+  //         setIsLoaded(true);
+  //         setError(error);
+  //       }
+  //     );
+  // }, []);
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  } else if (!isLoaded) {
-    return <div>Loading...</div>;
-  }
+  // if (error) {
+  //   return <div>Error: {error.message}</div>;
+  // } else if (!isLoaded) {
+  //   return <div>Loading...</div>;
+  // }
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -58,7 +58,7 @@ function UserInput() {
           <Form.Group
             as={Col}
             md="4"
-            controlId="validationCutomAccountName"
+            controlId="validationCustomAccountName"
             id="accountName"
           >
             <Form.Label>Account Name</Form.Label>
@@ -67,7 +67,6 @@ function UserInput() {
               type="text"
               placeholder="Please enter account name"
               defaultValue=""
-              onInput={(e) => setQuery(e.target.value)}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -86,25 +85,20 @@ function UserInput() {
           <Form.Group as={Col} md="4" controlId="validationCustomCharacterName">
             <Form.Label>Character Name</Form.Label>
             <select className="form-control">
-              {data.map((name) => (
-                <option key={name.name}>
-                  {name.name}: {name.class}: {name.level}
-                </option>
-              ))}
             </select>
           </Form.Group>
         </Form.Row>
         <Form.Row>
           <Form.Group as={Col} md="2" controlId="validationCustom04">
             <Form.Label>Desired level</Form.Label>
-            <Form.Control type="int" placeholder="" required />
+            <Form.Control type="int" placeholder="Int UserInput" required />
             <Form.Control.Feedback type="invalid">
               Please provide a valid level.
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="2" controlId="validationCustom05">
             <Form.Label>XPH</Form.Label>
-            <Form.Control type="int" placeholder="Value in millions" required />
+            <Form.Control type="int" placeholder="Fetch from API" required />
             <Form.Control.Feedback type="invalid">
               Please provide a valid XPH value.
             </Form.Control.Feedback>
@@ -113,9 +107,8 @@ function UserInput() {
             <Form.Label>Current Level</Form.Label>
             <Form.Control
               type="int"
-              placeholder="Value in millions"
+              placeholder="Fetch from API"
               readOnly={true}
-              value={data.level}
             />
             <Form.Control.Feedback type="invalid">
               Please provide a valid XPH value.
@@ -123,14 +116,7 @@ function UserInput() {
           </Form.Group>
           <Form.Group as={Col} md="2" controlId="validationCustom05">
             <Form.Label>Current XP</Form.Label>
-            <Form.Control type="int" placeholder="Value in millions" required />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid XPH value.
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group as={Col} md="2" controlId="validationCustom05">
-            <Form.Label>Class</Form.Label>
-            <Form.Control type="int" placeholder="Value in millions" required />
+            <Form.Control type="int" placeholder="Fetch from API" required />
             <Form.Control.Feedback type="invalid">
               Please provide a valid XPH value.
             </Form.Control.Feedback>
@@ -143,7 +129,7 @@ function UserInput() {
             feedback="You must agree before submitting."
           />
         </Form.Group>
-        <Button type="submit" onClick={useFetch}>
+        <Button type="submit" onClick={useFetch} disabled>
           Submit form
         </Button>
       </Form>
